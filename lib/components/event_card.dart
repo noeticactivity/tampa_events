@@ -3,8 +3,10 @@ import 'package:tampa_events/models/event.dart'; // Make sure this import points
 
 class EventCard extends StatelessWidget {
   final Event event;
+  final double height;
+  final double width;
 
-  EventCard({required this.event});
+  EventCard({required this.event, required this.height, required this.width});
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +21,8 @@ class EventCard extends StatelessWidget {
           Image.network(
             event.image,
             fit: BoxFit.cover,
-            width: double.infinity,
-            height: 200, // Fixed height for the card's image
+            width: width, //double.infinity,
+            height: height, // Fixed height for the card's image
           ),
           Positioned(
             top: 10,

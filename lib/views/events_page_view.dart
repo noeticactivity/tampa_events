@@ -1,4 +1,7 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
+import 'package:tampa_events/components/event_card.dart';
 import 'package:tampa_events/repositories/event_repository.dart';
 
 class EventsPage extends StatelessWidget {
@@ -23,11 +26,18 @@ class EventsPage extends StatelessWidget {
             itemCount: events.length,
             itemBuilder: (context, index) {
               final event = events[index];
-              return ListTile(
-                title: Text(event.name),
-                subtitle: Text(event.description),
-                leading: Image.network(event.image, width: 100),
+              return Container(
+                child: EventCard(
+                  event: event,
+                  height: 200,
+                  width: 300,
+                ),
               );
+              // return ListTile(
+              //   title: Text(event.name),
+              //   subtitle: Text(event.description),
+              //   leading: Image.network(event.image, width: 100),
+              // );
             },
           );
         },
