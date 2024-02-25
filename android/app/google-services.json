@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "572051831391",
+    "project_id": "tampaevents-e7eb1",
+    "storage_bucket": "tampaevents-e7eb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572051831391:android:ed162b8630f46febe779ea",
+        "android_client_info": {
+          "package_name": "com.example.tampa_events"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6YPHcybwwHacUD_VJsVPGZpfQUUNybDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
